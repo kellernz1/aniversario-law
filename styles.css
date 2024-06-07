@@ -1,0 +1,118 @@
+body {
+    
+    font-family: 'Comic Neue', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Comic Neue', cursive;
+}
+
+p {
+    color: #cd0edf;
+    text-align: center;
+    font-family: 'Comic Neue', cursive;
+}
+
+.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px; 
+    height: auto; 
+}
+
+.top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.small-top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 350px; /* Defina a largura desejada */
+    height: auto; /* A altura será ajustada automaticamente para manter a proporção */
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.small-bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 350px; 
+    height: auto; 
+}
+
+.top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.small-top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px; 
+    height: auto; 
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.small-bottom-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 400px; 
+    height: auto; 
+}
+
+.center-bottom {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 400px; 
+    height: auto; 
+}
+
+@keyframes gradient-animation {
+    0% {
+        background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+    }
+    20% {
+        background: linear-gradient(45deg, orange, yellow, green, blue, indigo, violet, red);
+    }
+    40% {
+        background: linear-gradient(45deg, yellow, green, blue, indigo, violet, red, orange);
+    }
+    60% {
+        background: linear-gradient(45deg, green, blue, indigo, violet, red, orange, yellow);
+    }
+    80% {
+        background: linear-gradient(45deg, blue, indigo, violet, red, orange, yellow, green);
+    }
+    100% {
+        background: linear-gradient(45deg, indigo, violet, red, orange, yellow, green, blue);
+    }
+}
+
+.animated-gradient {
+    animation: gradient-animation 2s infinite;
+    background-size: 200% 200%;
+}
